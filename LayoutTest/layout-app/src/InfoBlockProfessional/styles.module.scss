@@ -1,0 +1,94 @@
+.infoBlockWrapper {
+    width: 100%;
+    max-width: 207px ;
+    display: flex;
+    flex-direction: column;
+    margin-right: 59px;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: 993px) {
+      padding:  0 20px;
+      max-width: 292px;
+      margin: 0 0 48px 0;
+    }
+
+
+    &__priceBlock {
+      display: flex;
+      margin-bottom: 23px;
+    }
+
+    &__price {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      color: #231D4F;
+      margin-right: 4px;
+    }
+
+    &__month {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+      color: #848199;
+      margin-top: auto;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 42px;
+      color: #231D4F;
+      margin: 0 0 6px 0;
+    }
+
+    &__subtitle {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: #848199;
+      margin: 0 0 14px 0;
+    }
+
+    &__stepWrapper {
+      display: flex;
+      margin: 0 0 8px 0;
+      align-items: center;
+
+      :last-child {
+        margin: 0;
+      }
+    }
+
+    &__image {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &__step {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: #848199;
+      margin: 0;
+    }
+
+    &__stepContainer {
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (max-width: 993px) {
+        margin-bottom: 38px;
+      }
+
+      :last-child {
+        margin: 0;
+      }
+    }
+
+    &__buttonWrapper {
+      margin-top: auto;
+    }
+  }
+  

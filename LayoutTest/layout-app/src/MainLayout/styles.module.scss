@@ -1,0 +1,200 @@
+@keyframes move {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.2s;
+    box-sizing: border-box;
+    padding-bottom: 69px;
+    height: 900px;
+    background: linear-gradient(#F5F5FA, #F2DAD5, #A0ABD6);
+
+    @media only screen and (max-width: 993px) {
+        height: 100%;
+        padding-bottom: 64px;
+      }
+}
+
+.titleBlock {
+  display: flex;  
+  justify-content: space-between;
+  margin-top: 41px;
+  margin-bottom: 90px;
+
+  @media only screen and (max-width: 993px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 584px;;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+        margin: 0 0 25px 0;
+        color: #231D4F;
+
+    @media only screen and (max-width: 576px) {
+        text-align: center;
+      }
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #848199;
+        margin: 0;
+
+        @media only screen and (max-width: 993px) {
+            margin-bottom: 37px;
+          }
+    }
+}
+
+.switchBlock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    height: 44px;
+    background-color: white;
+    margin-top: auto;
+    border-radius: 22px;
+    transition: 0.2s;
+
+
+    &__button {
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100%;
+        max-width: 110px;
+        height: 44px;
+        background-color: #BB6BD9;
+        border-radius: 22px;
+        border: none;
+        cursor: pointer;
+        box-shadow: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        box-shadow: 0px 6px 12px rgba(82, 67, 194, 0.16);
+
+        &:hover {
+            background-color: #A847CC;
+            color: white;
+          }
+    }
+
+
+    &__text {
+        color: #3B3472;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 32px;
+        transition: 0.2s;
+    }
+}
+
+.switchBlockRight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 220px;
+    height: 44px;
+    background-color: white;
+    margin-top: auto;
+    border-radius: 22px;
+
+
+    &__buttonRight {
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 100%;
+        max-width: 110px;
+        height: 44px;
+        background-color: #BB6BD9;
+        border-radius: 22px;
+        border: none;
+        cursor: pointer;
+        box-shadow: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: auto;
+        box-shadow: 0px 6px 12px rgba(82, 67, 194, 0.16);
+
+        &:hover {
+            background-color: #A847CC;
+            color: white;
+          }
+    }
+
+    &__textRight {
+        color: #3B3472;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        margin-left: 32px;
+    }
+}
+
+.infoBlock {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 467px;
+    padding: 40px 68px;
+    background: rgba(255, 255, 255, 0.64);
+    border-radius: 26px;
+    display: flex;
+
+    @media only screen and (max-width: 993px) {
+        height: 100%;
+        flex-direction: column;
+        // padding: 32px 8px 8px 8px;
+      }
+
+      @media only screen and (max-width: 576px) {
+        padding: 32px 8px 8px 8px;
+        align-items: center;
+      }
+}
+
+

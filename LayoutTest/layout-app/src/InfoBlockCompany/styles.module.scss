@@ -1,0 +1,135 @@
+.infoBlockWrapper {
+    position: absolute;
+    width: 100%;
+    max-width: 292px;
+    height: 473px;
+    display: flex;
+    flex-direction: column;
+    background-color: #231D4F;
+    border-radius: 26px;
+    top: -30px;
+    right: 45px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+
+    @media only screen and (max-width: 993px) {
+      position: static;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 576px) {
+      padding: 20px;
+    }
+
+    &__specialWrapper {
+      width: 100%;
+
+      @media only screen and (max-width: 576px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__special {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 121px;
+      height: 27px;
+      background-color: #403879;
+      color: #BB6BD9;
+      text-transform: uppercase;
+      border-radius: 26px;
+      font-weight: 800;
+      font-size: 10px;
+      line-height: 15px;
+      margin: 0 0 25px auto;
+
+      @media only screen and (max-width: 576px) {
+        margin: 0;
+      }
+    }
+
+    &__priceBlock {
+      display: flex;
+      margin-bottom: 23px;
+    }
+
+    &__price {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 46px;
+      color: white;
+      margin-right: 4px;
+    }
+
+    &__month {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 26px;
+      color: white;
+      margin-top: auto;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 42px;
+      color: white;
+      margin: 0 0 6px 0;
+    }
+
+    &__subtitle {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: white;
+      margin: 0 0 14px 0;
+    }
+
+    &__stepWrapper {
+      display: flex;
+      margin: 0 0 8px 0;
+      align-items: center;
+
+      :last-child {
+        margin: 0;
+      }
+    }
+
+    &__image {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+
+    &__step {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 22px;
+      color: white;
+      margin: 0;
+    }
+
+    &__stepContainer {
+      display: flex;
+      flex-direction: column;
+
+      @media only screen and (max-width: 576px) {
+        margin-bottom: 38px;
+      }
+
+      :last-child {
+        margin: 0;
+      }
+    }
+
+    &__buttonWrapper {
+      margin-top: auto;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+
+
+.uiSize {
+  width: 100%;
+  position: relative;
+
+  &--width-xs {
+    max-width: 124px;
+  }
+
+  &--width-sm {
+    max-width: 120px;
+
+    // @media (max-width: $breakpoint-up-md) {
+    //   max-width: 80px;
+    // }
+  }
+
+  &--width-md {
+    max-width: 150px;
+  }
+
+  &--width-lg {
+    max-width: 180px;
+  }
+
+  &--width-xl {
+    max-width: 343px;
+  }
+
+  &--width-full {
+    max-width: 100%;
+  }
+
+  &--width-content {
+    display: inline-flex;
+  }
+
+  &--width-auto {
+    width: auto;
+  }
+
+  &--height-xs {
+    min-height: 28px;
+    font-size: 0.8125rem;
+  }
+
+  &--height-sm {
+    min-height: 38px;
+    font-size: 0.875rem;
+  }
+
+  &--height-md {
+    min-height: 44px;
+    // font-weight: $font-weight-regular;
+  }
+
+  &--height-lg {
+    min-height: 56px;
+    // font-weight: $font-weight-medium;
+    font-size: 16px;
+  }
+
+  &--height-full {
+    height: 100%;
+  }
+}

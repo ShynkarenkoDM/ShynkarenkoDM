@@ -1,0 +1,20 @@
+.contentLimiter {
+  max-width: 1366px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 50px;
+
+  @media only screen and (max-width: 993px) {
+    padding: 0 15px;
+  }
+
+  &--middle {
+    max-width: 937px;
+    padding: 0;
+
+    @media only screen and (max-width: 993px) {
+      padding: 0 15px;
+    }
+  }
+}
